@@ -1,0 +1,53 @@
+==================== 2026-02-24T01:21:03.017651Z | 0a61213d-de51-462d-ac42-40b06178aba4 ====================
+01:21:03.017679 [info ]: Starting dbt LSP server
+01:21:03.017693 [info ]: Connecting to LSP client on port 8000
+01:21:03.017840 [info ]: Successfully connected to LSP client
+01:21:03.017850 [info ]: Creating LSP service...
+01:21:03.047795 [info ]: Creating LSP server...
+01:21:03.047807 [info ]: Starting LSP server...
+01:21:03.088764 [info ]: Started loading project
+01:21:03.089720 [info ]: Loading ~/.dbt/profiles.yml
+01:21:03.181667 [debug]:    Started loading packages
+01:21:03.182168 [debug]:     Loaded [  0.00s] packages
+01:21:03.182527 [info ]: Started parsing
+01:21:03.191776 [info ]: Finished loading project [  0.10s]
+01:21:03.194104 [debug]: Finished parsing models/customers.sql [  0.00s]
+01:21:03.194240 [info ]: Finished parsing [  0.01s]
+01:21:03.194391 [info ]: Cached model count updated: 1 models (estimate)
+01:21:03.194399 [info ]: Cached model count updated: 1 models (accurate)
+01:21:03.194427 [info ]: Started scheduling
+01:21:03.194467 [info ]: Finished scheduling [  0.00s]
+01:21:03.194478 [info ]: Started scheduling
+01:21:03.194483 [info ]: Finished scheduling [  0.00s]
+01:21:03.195744 [info ]: Started deferring state
+01:21:03.195756 [info ]: Finished deferring state [  0.00s]
+01:21:03.196742 [info ]: Started downloading schemas
+01:21:03.196759 [debug]:    Started downloading relations
+01:21:03.196802 [debug]:   Finished [  0.00s] downloading relations
+01:21:03.196813 [info ]: Finished downloading schemas [  0.00s]
+01:21:03.254046 [info ]: Started building task graph
+01:21:03.254100 [info ]: Finished building task graph [  0.00s]
+01:21:03.254199 [info ]: Started rendering (1 nodes)
+01:21:03.254209 [info ]: Started model dbt_pbates.customers
+01:21:03.254223 [debug]: Started rendering model dbt_pbates.customers
+01:21:03.254897 [debug]: Compiled SQL for node model.pb_jaffle_shop_vscode.customers at target/.lsp/compiled/models/customers.sql
+01:21:03.254937 [debug]: Finished rendering [  0.00s] model dbt_pbates.customers [success]
+01:21:03.254943 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+01:21:03.254952 [info ]: Started analyzing (1 nodes)
+01:21:03.254956 [debug]: Started analyzing model dbt_pbates.customers
+01:21:03.591076 [info ]: Loading ~/.dbt/profiles.yml
+01:21:04.308029 [debug]: Query executed on node model.pb_jaffle_shop_vscode.customers:
+describe table "RAW"."JAFFLE_SHOP"."ORDERS"
+01:21:04.368942 [debug]: Query executed on node model.pb_jaffle_shop_vscode.customers:
+describe table "RAW"."JAFFLE_SHOP"."CUSTOMERS"
+01:21:05.059151 [debug]: Schema hydration: registering 2 schemas from db_runner
+01:21:05.059218 [debug]: Schema hydration: parsing FQN string '"RAW"."JAFFLE_SHOP"."ORDERS"'
+01:21:05.059256 [debug]: Schema hydration: registering cfqn=RAW.JAFFLE_SHOP.ORDERS (catalog='RAW', schema='JAFFLE_SHOP', table='ORDERS')
+01:21:05.061492 [debug]: Schema hydration: registration succeeded for RAW.JAFFLE_SHOP.ORDERS, exists_check=true
+01:21:05.061515 [debug]: Schema hydration: parsing FQN string '"RAW"."JAFFLE_SHOP"."CUSTOMERS"'
+01:21:05.061533 [debug]: Schema hydration: registering cfqn=RAW.JAFFLE_SHOP.CUSTOMERS (catalog='RAW', schema='JAFFLE_SHOP', table='CUSTOMERS')
+01:21:05.062186 [debug]: Schema hydration: registration succeeded for RAW.JAFFLE_SHOP.CUSTOMERS, exists_check=true
+01:21:05.100929 [info ]:  Succeeded [  1.84s] model dbt_pbates.customers (view)
+01:21:05.100978 [debug]: Finished analyzing [  1.85s] model dbt_pbates.customers [success]
+01:21:05.100984 [info ]: Finished analyzing [  1.85s] (1 nodes, 0 skipped, 0 errors)
+01:21:05.104820 [info ]: Cached model count updated: 1 models (accurate)
